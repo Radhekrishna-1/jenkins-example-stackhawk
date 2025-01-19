@@ -1,5 +1,6 @@
 pipeline {
-  agent { label "linux" } 
+  //agent { label "linux" } 
+  agent any
   environment {
     STACKHAWK_API_KEY = credentials("stackhawk-api-key")
   }
